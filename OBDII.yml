@@ -1,0 +1,27 @@
+connectors:
+  X1:
+    type: OBDII
+    pinlabels: [' ',' ',' ',CHASSIS,GND,CANH,'7',RX,TX,'10','UNK','12','13',CANL,'15',+12v]
+    hide_disconnected_pins: true
+
+  X2:
+    pincount: 8
+
+cables:
+  W1:
+    wirecount: 8
+    length: 3
+    colors: [GN, BK, WH, BN, WHBK, GD, BU, RD]
+  T2:
+    wirecount: 2
+    category: bundle
+  T3:
+    wirecount: 2
+ 
+connections:
+  -
+    - X1: [CANH,RX,TX,UNK,CANL,+12v]
+    - W1: [1-6]
+    - X2: [1-6]
+
+  

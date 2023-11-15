@@ -1,0 +1,6 @@
+output/*
+*.tsv
+*.gv
+*.html
+*.png
+*.svg

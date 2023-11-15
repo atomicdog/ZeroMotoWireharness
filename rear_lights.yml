@@ -1,0 +1,60 @@
+connectors:
+  X1:
+    type: MX150
+    pincount: 8
+    manufacturer: Molex
+    mpn: 33482-4801
+  X2:
+    pincount: 4
+  X3:
+    style: simple
+    pincount: 1
+  X4:
+    style: simple
+    pincount: 1
+  X5:
+    style: simple
+    pincount: 1
+  X6:
+    style: simple
+    pincount: 1
+
+
+cables:
+  TurnSignal:
+    wirecount: 4
+    length: 14 in
+    colors: [WHGN, BK, RDGY, BK]
+    notes: Harn S MBB ctrl CHS
+  BrakeLight:
+    wirecount: 4
+    length: 14 in
+    colors: [WHRD, WHBK, BK, BN] 
+    notes: Harn S MBB ctrl CHS
+connections:
+  -
+    - X1: [1-4]
+    - TurnSignal: [1-4]
+  -
+    - TurnSignal: [1]
+    - X3: [1]
+  -
+    - TurnSignal: [2]
+    - X4: [1]
+  -
+    - TurnSignal: [3]
+    - X5: [1]
+  -
+    - TurnSignal: [4]
+    - X6: [1]
+  -
+    - X1: [5-8]
+    - BrakeLight: [1-4]
+    - X2: [4-1]
+
+additional_bom_items:
+  - # define an additional item to add to the bill of materials (does not appear in graph)
+    description: Label
+    manufacturer: BizLink Technology(Shenzhen)
+    mpn: 56-08201 rev 2
+  

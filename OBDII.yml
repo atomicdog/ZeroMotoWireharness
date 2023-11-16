@@ -3,31 +3,40 @@ connectors:
     type: OBDII
     pinlabels: [' ',' ',' ',CHASSIS,GND,CANH,' ',RX,TX,' ','UNK',' ',' ',CANL,' ',+12v]
     hide_disconnected_pins: true
-  X2:
-    pincount: 9
-    notes: pin11(unknown) to pin11(MBB 48p conn)
+  MBB:
+    pincount: 48
+    hide_disconnected_pins: true
+  MBB2:
+    pincount: 36
+    hide_disconnected_pins: true
   X3:
     style: simple
     pincount: 1
 
 cables:
   W1:
-    wirecount: 8
+    wirecount: 7
     length: 3
-    colors: [BKBU, BK, WH, BKRD, BKSL, BK, BU, BU]
+    colors: [BK, WH, BKRD, BKSL, BK, BU, BU]
   W2:
+    wirecount: 1
+    colors: [BKBU]
+  W3:
     wirecount: 1
     color: GY
 
 connections:
   -
-    - X1: [CHASSIS,GND,CANH,RX,TX,UNK,CANL,+12v]
-    - W1: [1-8]
-    - X2: [1-8]
+    - X1: [GND,CANH,RX,TX,UNK,CANL,+12v]
+    - W1: [1-7]
+    - MBB: [13,9,14,15,11,10,12]
   -
-    - W2: [1]
+    - W3: [1]
     - X3: [1]
   -
+    - W3: [1]
+    - MBB: [39]
+  -
+    - X1: [CHASSIS]
     - W2: [1]
-    - X2: [9]
-  
+    - MBB2: [33]

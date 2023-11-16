@@ -3,7 +3,7 @@ connectors:
     type: MX150
     pincount: 8
     manufacturer: Molex
-    mpn: 33482-4801
+    mpn: '<a href=https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/334/33482/334824801_sd.pdf>33482-4801 </a>'
   X2:
     pincount: 4
   X3:
@@ -57,4 +57,3 @@ additional_bom_items:
     description: Label
     manufacturer: BizLink Technology(Shenzhen)
     mpn: 56-08201 rev 2
-  

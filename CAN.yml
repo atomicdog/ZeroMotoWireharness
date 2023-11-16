@@ -1,0 +1,42 @@
+connectors:
+  X1:
+    type: HSG
+    subtype: plug
+    pincount: 2
+    manufacturer: TE
+    mpn: 
+  X2:
+    type: HSG
+    subtype: socket
+    pincount: 2
+    manufacturer: TE
+    mpn: 
+  X3:
+    type: HSG
+    subtype: plug
+    pincount: 2
+    manufacturer: TE
+    mpn: 
+
+cables:
+  W1:
+    wirecount: 2
+    colors: [WH, BU]
+    notes: Accessory CAN harness
+
+connections:
+  -
+    - X1: [1-2]
+    - W1: [1-2]
+    - X2: [1-2]
+  -
+    - X1: [1-2]
+    - W1: [1-2]
+    - X3: [1-2]
+
+additional_bom_items:
+  -
+    description: Label
+    manufacturer: APTIV
+    mpn: 56-08122 rev 2
+    spn: 35114529

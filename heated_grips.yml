@@ -1,0 +1,24 @@
+connectors:
+  X1:
+    pincount: 2
+  X2:
+    pincount: 2
+  MBB2:
+    pincount: 36
+    hide_disconnected_pins: true
+
+cables:
+  W1:
+    wirecount: 4
+    colors: [YE, BK, YE, BK]
+    notes: heated grips
+
+connections:
+  -
+    - X1: [1-2]
+    - W1: [1-2]
+    - MBB2: [5,4]
+  -
+    - X2: [1-2]
+    - W1: [3-4]
+    - MBB2: [17,33]

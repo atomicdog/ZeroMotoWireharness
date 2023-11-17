@@ -1,7 +1,7 @@
 connectors:
   X1:
     type: OBDII
-    pinlabels: [' ',' ',' ',CHASSIS,GND,CANH,' ',RX,TX,' ','UNK',' ',' ',CANL,' ',+12v]
+    pinlabels: [' ',' ',' ',CHASSIS,GND,CANH,' ',RX,TX,' ','CCM GND',' ',' ',CANL,' ',+12v]
     hide_disconnected_pins: true
   MBB:
     pincount: 48
@@ -27,7 +27,7 @@ cables:
 
 connections:
   -
-    - X1: [GND,CANH,RX,TX,UNK,CANL,+12v]
+    - X1: [GND,CANH,RX,TX,'CCM GND',CANL,+12v]
     - W1: [1-7]
     - MBB: [13,9,14,15,11,10,12]
   -

@@ -1,7 +1,8 @@
 connectors:
   X1:
     type: MX150
-    pincount: 8
+#    pincount: 8
+    pinlabels: [RIGHT,'R GND',LEFT,'L GND','5','6','7','8']
     manufacturer: Molex
     mpn: '<a href=https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/334/33482/334824801_sd.pdf>33482-4801 </a>'
   X2:
@@ -33,7 +34,7 @@ cables:
     notes: Harn S MBB ctrl CHS
 connections:
   -
-    - X1: [1-4]
+    - X1: [RIGHT,'R GND',LEFT,'L GND']
     - TurnSignal: [1-4]
   -
     - TurnSignal: [1]

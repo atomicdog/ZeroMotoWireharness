@@ -1,0 +1,19 @@
+# NTC thermistor, near 12V Aux and Zadi Key wires break away
+connectors:
+  Thermistor:
+    type: NTC
+    pincount: 2 
+    notes: '~12Kohm @ room temperature'
+  MBB1:
+    pincount: 48
+    hide_disconnected_pins: true
+cables:
+  W1:
+    wirecount: 2
+    colors: [BK, BK]
+    notes: Sensor in harness 
+connections:
+  -
+    - Thermistor: [1-2]
+    - W1: [1-2]
+    - MBB1: [34,35]

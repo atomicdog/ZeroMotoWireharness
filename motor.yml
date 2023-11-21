@@ -1,0 +1,49 @@
+connectors:
+  X1:
+    type: MX150
+    pincount: 4
+    manufacturer: molex
+    mpn: '<a href=https://tools.molex.com/pdm_docs/sd/334810401_sd.pdf>33481-0401</a>'
+  X2:
+    pincount: 35
+    manufacturer: TE
+    hide_disconnected_pins: true
+  X3:
+    pinlabels: [A,B,C,D,E,F,G,H]
+    manufacturer: Delphi
+    hide_disconnected_pins: true
+
+cables:
+  W1:
+    wirecount: 4
+    colors: [BK, BUGY, WHBG, OG]
+  W2:
+    wirecount: 6
+    colors: [BU,WH,BK,RD,BK,WH]
+  LOOP:
+    wirecount: 1
+    colors: [BU]
+
+connections:
+  -
+    - X1: [1-4]
+    - W1: [1-4]
+    - X2: [1,2,13,24]
+  -
+    - X3: [A,B,C,E,G,H]
+    - W2: [1-6]
+    - X2: [21,33,9,35,12,32] 
+
+  -
+    - X2: [3]
+    - LOOP: [1]
+  -
+    - X2: [14]
+    - LOOP: [1]
+
+
+additional_bom_items:
+  -
+    description: Label
+    manufacturer: BizLink Technology(Shenzhen)
+    mpn: 56-08188 rev 4

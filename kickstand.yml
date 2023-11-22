@@ -9,7 +9,7 @@ connectors:
 cables:
   W1:
     wirecount: 3
-    colors: [YKBK, RD, BK]
+    colors: [YEBK, RD, BK]
     notes: fixme
 
 connections:

@@ -1,0 +1,19 @@
+
+connectors:
+  X1:
+    pinlabels: [PWR,GND]
+  MBB2:
+    pincount: 36
+    hide_disconnected_pins: true
+
+cables:
+  W1:
+    wirecount: 2
+  # Brown or Orange? w/black strip 
+    colors: [OGBK, BK]
+
+connections:
+  -
+    - X1: [1-2]
+    - W1: [1-2]
+    - MBB2: [12,33]

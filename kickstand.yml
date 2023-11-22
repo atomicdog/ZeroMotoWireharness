@@ -1,0 +1,19 @@
+
+connectors:
+  X1:
+    pincount: 3
+  MBB2:
+    pincount: 36
+    hide_disconnected_pins: true
+
+cables:
+  W1:
+    wirecount: 3
+    colors: [YKBK, RD, BK]
+    notes: fixme
+
+connections:
+  -
+    - X1: [1-3]
+    - W1: [1-3]
+    - MBB2: [15,14,16]

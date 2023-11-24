@@ -1,7 +1,8 @@
 
 connectors:
   X1:
-    pincount: 3
+    pinlabels: [OUT,VCC,GND]
+    notes: 'fixme: pin #?' 
   MBB2:
     pincount: 36
     hide_disconnected_pins: true
@@ -10,7 +11,6 @@ cables:
   W1:
     wirecount: 3
     colors: [YEBK, RD, BK]
-    notes: fixme
 
 connections:
   -

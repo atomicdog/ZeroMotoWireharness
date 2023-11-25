@@ -1,14 +1,14 @@
 connectors:
   MBB1:
 #    pincount: 48
-    pinlabels: [CANHc,CANLc,CANc_4pin_BK,'n.c',CANHa,CANLa,'GND, Dash','n.c',CANHb,CANLb,'GND, CCM','12v, OBDII','GND, OBDII','RX, OBDII','TX, OBDII','n.c',
-      ' ',' ',' ',' ',' ',' ',' ','n.c',Fnt8pin_BNBU,Fnt8pin_BUGY,Fnt8pin_BN,Fnt8pin_BK,Fnt8pin_BURD,Fnt8pin_RDBK,31Fnt8pin_BK,32_2pin_WHBK,
+    pinlabels: [CANH-c,CANL-c,CANc_4pin_BK,'n.c',CANH-a,CANL-a,'GND, Dash','n.c',CANH-b,CANL-b,'GND, CCM','12v, OBDII','GND, OBDII','RX, OBDII','TX, OBDII','n.c',
+      ' ',' ',' ',' ',' ',' ',' ','n.c',Fnt8pin_BNBU,Fnt8pin_BUGY,Fnt8pin_BN,Fnt8pin_BK,Fnt8pin_BURD,Fnt8pin_RDBK,Fnt8pin_BK,2pin_WHBK,
       4pin_BUBK,'Thermistor 1','Thermistor 2',3P_BK,3P_WH,3P_RD,'Unknown, OBDII',Fnt2pinA_BNGY,Fnt2pinB_WH,'BMS 1','BMS 2','BMS 3','BMS 4',5V,'Front brake SW','REARLIGHT_WHBK']
 
   MBB2:
 #    pincount: 36
     pinlabels: ['GND, Dash',36WHOR_4pCAN_WHGN,HEADLIGHT_RDBK,BK1GRIP_HEAT,YE1GRIP_HEAT,'+12V, ACC',7lights_BN,CANc_REAR4P_OR,REARLIGHT_RDWH,'Front Turn Sig, RDGU','Front Turn Sig, WHGU','Heater, 12V battery',
-      'BMS p7-YEGY','+12v, BMS_kick-RD','Sig, Kickstand','GND, Kickstand',YE2GRIP_HEAT,'+12V, ACC',19lights_BN,'+12v, Key on','+12v, Key power','Rear Turn, Left','Rear Turn, Right','n.c',
+      'BMS p7-YEGY','+5v, BMS_kick-RD','Sig, Kickstand','GND, Kickstand',YE2GRIP_HEAT,'+12V, ACC',19lights_BN,'+12v, Key on','+12v, Key power','Rear Turn, Left','Rear Turn, Right','n.c',
       'PWR 1','PWR 2','PWR 3','PWR 4','PWR 5','12V #3','12V #4','12V #5','Chassis ground','GND, KEY',35_4pin_RDWH,36_4pin_RDBK]    
 
   Thermistor:

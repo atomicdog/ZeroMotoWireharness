@@ -1,6 +1,6 @@
 connectors:
   KEY:
-    pinlabels: [CANH,CANL,pwr1,GND,'{LED}',pwr2]
+    pinlabels: [CANH,CANL,'+12v, Key on',GND,'{LED}','+12v in']
 
   MBB1:
     pincount: 48

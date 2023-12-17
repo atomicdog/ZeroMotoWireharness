@@ -1,0 +1,28 @@
+connectors:
+  X1:
+    type: MQS
+    pinlabels: [GND, CAN L, CAN H, Power]
+    manufacturer: TE
+    mpn: '<a href=https://www.te.com/usa-en/product-1-967640-1.html>1-967640-1</a>'
+  MBB1:
+    pincount: 48
+    hide_disconnected_pins: true
+  MBB2:
+    pincount: 36
+    hide_disconnected_pins: true
+
+cables:
+  W1:
+    wirecount: 4
+    colors: [BK, BUGY, WHGY, WHGN]
+    notes: Bosch IMU
+
+connections:
+  -
+    - X1: [GND, CAN L, CAN H]
+    - W1: [1,2,3]
+    - MBB1: [3-1]
+  -
+    - X1: [Power]
+    - W1: [4]
+    - MBB2: [2]

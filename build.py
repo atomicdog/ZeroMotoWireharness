@@ -4,6 +4,7 @@
 import argparse
 import os
 from pathlib import Path
+from typing import List
 
 from wireviz import wireviz
 from wireviz.wv_helper import open_file_read, open_file_append
@@ -16,7 +17,7 @@ EXTENSIONS_CONTAINING_GRAPHVIZ_OUTPUT = ['.png', '.svg', '.html']
 GENERATED_EXTENSIONS = EXTENSIONS_NOT_CONTAINING_GRAPHVIZ_OUTPUT + EXTENSIONS_CONTAINING_GRAPHVIZ_OUTPUT
 
 
-def collect_filenames(description, path, ext_list):
+def collect_filenames(description: str, path: Path, ext_list: list) -> List[Path]:
     patterns = [f"*{ext}" for ext in ext_list]
     print(f'{description} in "{path}"')
     return sorted([filename for pattern in patterns for filename in path.glob(pattern)])
@@ -27,7 +28,7 @@ def build_generated(path, build_readme=True, include_readme=False, include_sourc
     # collect and iterate input YAML files
     for yaml_file in collect_filenames('Building', path, INPUT_EXTENSIONS):
         print(f'  "{yaml_file}"')
-        wireviz.parse_file(yaml_file)
+        wireviz.parse_file(str(yaml_file))
 
         if build_readme:
             i = ''.join(filter(str.isdigit, yaml_file.stem))
@@ -39,7 +40,7 @@ def build_generated(path, build_readme=True, include_readme=False, include_sourc
                             out.write(line.replace('## ', f'## {i} - '))
                         out.write('\n\n')
                 else:
-                    out.write(f'## {yaml_file.stem}\n')
+                    out.write(f'\n## {yaml_file.stem}\n')
 
                 if include_source:
                     with open_file_read(yaml_file) as src:
@@ -53,7 +54,7 @@ def build_generated(path, build_readme=True, include_readme=False, include_sourc
                 out.write(f'[Source]({yaml_file.name}) - [Bill of Materials]({yaml_file.stem}.bom.tsv)\n\n\n')
 
 
-def clean_generated(path):
+def clean_generated(path: Path):
     # collect and remove files
     for filename in collect_filenames('Cleaning', path, GENERATED_EXTENSIONS):
         if filename.is_file():
@@ -61,7 +62,7 @@ def clean_generated(path):
             os.remove(filename)
 
 
-def compare_generated(path, branch='', include_graphviz_output=False):
+def compare_generated(path: Path, branch='', include_graphviz_output=False):
     if branch:
         branch = f' {branch.strip()}'
     compare_extensions = GENERATED_EXTENSIONS if include_graphviz_output else EXTENSIONS_NOT_CONTAINING_GRAPHVIZ_OUTPUT
@@ -72,7 +73,7 @@ def compare_generated(path, branch='', include_graphviz_output=False):
         os.system(cmd)
 
 
-def restore_generated(path, branch='', include_readme=True):
+def restore_generated(path: Path, branch='', include_readme=True):
     if branch:
         branch = f' {branch.strip()}'
     # collect input YAML files

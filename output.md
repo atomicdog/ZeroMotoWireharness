@@ -80,202 +80,6 @@ additional_bom_items:
 
 
 
-## IMU
-```yaml
-connectors:
-  X1:
-    type: MQS
-    pinlabels: [GND, CAN L, CAN H, Power]
-    manufacturer: TE
-    mpn: '<a href=https://www.te.com/usa-en/product-1-967640-1.html>1-967640-1</a>'
-  MBB1:
-    pincount: 48
-    hide_disconnected_pins: true
-  MBB2:
-    pincount: 36
-    hide_disconnected_pins: true
-
-cables:
-  W1:
-    wirecount: 4
-    colors: [BK, BUGY, WHGY, WHGN]
-    notes: Bosch IMU
-
-connections:
-  -
-    - X1: [GND, CAN L, CAN H]
-    - W1: [1,2,3]
-    - MBB1: [3-1]
-  -
-    - X1: [Power]
-    - W1: [4]
-    - MBB2: [2]
-```
-
-![](IMU.png)
-
-[Source](IMU.yml) - [Bill of Materials](IMU.bom.tsv)
-
-
-
-## MBB
-```yaml
-connectors:
-  MBB1:
-#    pincount: 48
-    pinlabels: [CANH-c,CANL-c,CANc_4pin_BK,'n.c',CANH-a,CANL-a,'GND, Dash','n.c',CANH-b,CANL-b,'GND, CCM','12v, OBDII','GND, OBDII','RX, OBDII','TX, OBDII','n.c',
-      '_','_','_','_','_','_','_','n.c',Fnt8pin_BNBU,Fnt8pin_BUGY,Fnt8pin_BN,Fnt8pin_BK,Fnt8pin_BURD,Fnt8pin_RDBK,Fnt8pin_BK,2pin_WHBK,
-      4pin_BUBK,'Thermistor 1','Thermistor 2',3P_BK,3P_WH,3P_RD,'Unknown, OBDII',Fnt2pinA_BNGY,Fnt2pinB_WH,'BMS 1','BMS 2','BMS 3','BMS 4',5V,'Front brake SW','REARLIGHT_WHBK']
-
-  MBB2:
-#    pincount: 36
-    pinlabels: ['GND, Dash',36WHOR_4pCAN_WHGN,HEADLIGHT_RDBK,BK1GRIP_HEAT,YE1GRIP_HEAT,'+12V, ACC',7lights_BN,CANc_REAR4P_OR,REARLIGHT_RDWH,'Front Turn Sig, RDGU','Front Turn Sig, WHGU','Heater, 12V battery',
-      'BMS p7-YEGY','+5v, BMS_kick-RD','Sig, Kickstand','GND, Kickstand',YE2GRIP_HEAT,'+12V, ACC',19lights_BN,'+12v, Key on','+12v, Key power','Rear Turn, Left','Rear Turn, Right','n.c',
-      'PWR 1','PWR 2','PWR 3','PWR 4','PWR 5','12V #3','12V #4','12V #5','Chassis ground','GND, KEY',35_4pin_RDWH,36_4pin_RDBK]    
-
-  Thermistor:
-    type: NTC
-    pincount: 2 
-  Licence plate:
-    pinlabels: [+12v,GND]
-    notes: Light
-  DIAG:
-    type: OBDII
-    pinlabels: ['_','_','_',CHASSIS,GND,'CAN H','_',RX,TX,'_','CCM GND','_','_','CAN L','_',+12v]
-    hide_disconnected_pins: true
-    notes: fixme
-  DIAG2:
-    style: simple
-    pincount: 1
-  X1grip:
-    pincount: 2
-  X2grip:
-    pincount: 2
-  KICK:
-    pinlabels: [OUT,VCC,GND]
-    notes: 'fixme: pin #?'
-  Rear Lights:
-    type: MX150
-    pinlabels: [RIGHT,GND,LEFT,GND,'5','6','7','8']
-    manufacturer: Molex
-    mpn: '<a href=https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/334/33482/334824801_sd.pdf>33482-4801</a>'
-
-
-cables:
-  W1:
-    wirecount: 48
-    colors: [WHGY, BUGY, BK,'_', WH, BU, BK,'_', WH, BU, BK, BU, BK, BKRD, BKGY,'_',
-      '_','_','_','_','_','_','_','_', BNBU, BUGY, BN, BK, BURD, RDBK, BK, WHBK, 
-      BUBK, BK, BK, BK, WH, RD, GY, BNGY, WH, RD, RD, BNWH, BKWH, RD, WHBK, WHBK]
-
-  W2:
-    wirecount: 36
-    colors: [BNBU, WHOG, RDBK, BK, YE, BU, BN, OG, RDWH, RDGY, WHGY, CUBK,
-      YEGY, RD, YEBK, BK, YE, BU, BN, YEGN, YEGY, RDGY, WHGN,'_',
-      BU, BU, BU, BU, BU, BU, BU, BU, BK, BK, RDWH, RDBK]
-
-
-connections:
-  -
-    - MBB1: [1-3,5-7,9-15,25-48]
-    - W1: [1-3,5-7,9-15,25-48]
-#~~~
-  -
-    - W1: [34,35]  
-    - Thermistor: [1-2]
-  -
-    - W1: [13,9,14,15,11,10,12]
-    - DIAG: [GND,'CAN H',RX,TX,'CCM GND','CAN L',+12v]
-
-
-  -
-    - W1: [39]
-    - DIAG2: [1]
-
-  -
-    - MBB2: [1-23,25-36]
-    - W2: [1-23,25-36]
-#~~~
-  -
-    - W2: [19,33]
-    - Licence plate: [+12v,GND]
-  -
-    - W2: [5,4]
-    - X1grip: [1-2]
-
-  -
-    - W2: [17,33]  
-    - X2grip: [1-2]
-
-  -
-    - W2: [15,14,16]
-    - KICK: [OUT,VCC,GND]
-
-  -
-    - W2: [23,33,22,33,9,33,7]
-    - Rear Lights: [1-7]
-  -
-    - W1: [48]
-    - Rear Lights: [8]
-  ```
-
-![](MBB.png)
-
-[Source](MBB.yml) - [Bill of Materials](MBB.bom.tsv)
-
-
-
-## OBDII
-```yaml
-connectors:
-  DIAG:
-    type: OBDII
-    pinlabels: [' ',' ',' ',CHASSIS,GND,CANH,' ',RX,TX,' ','CCM GND',' ',' ',CANL,' ',+12v]
-    hide_disconnected_pins: true
-  MBB:
-    pincount: 48
-    hide_disconnected_pins: true
-  MBB2:
-    pincount: 36
-    hide_disconnected_pins: true
-  DIAG1:
-    style: simple
-    pincount: 1
-
-cables:
-  W1:
-    wirecount: 7
-    length: 3
-    colors: [BK, WH, BKRD, BKSL, BK, BU, BU]
-  W2:
-    wirecount: 1
-    colors: [BKBU]
-  W3:
-    wirecount: 1
-    color: GY
-
-connections:
-  -
-    - DIAG: [GND,CANH,RX,TX,'CCM GND',CANL,+12v]
-    - W1: [1-7]
-    - MBB: [13,9,14,15,11,10,12]
-  -
-    - W3: [1]
-    - DIAG1: [1]
-  -
-    - W3: [1]
-    - MBB: [39]
-  -
-    - DIAG: [CHASSIS]
-    - W2: [1]
-    - MBB2: [33]```
-
-![](OBDII.png)
-
-[Source](OBDII.yml) - [Bill of Materials](OBDII.bom.tsv)
-
-
-
 ## dash
 ```yaml
 connectors:
@@ -323,7 +127,8 @@ connections:
   -
     - DASH: [24]
     - W1: [13]
-    - BAT: [12V]```
+    - BAT: [12V]
+```
 
 ![](dash.png)
 
@@ -356,11 +161,50 @@ connections:
   -
     - X2: [1-2]
     - W1: [3-4]
-    - MBB2: [17,33]```
+    - MBB2: [17,33]
+```
 
 ![](heated_grips.png)
 
 [Source](heated_grips.yml) - [Bill of Materials](heated_grips.bom.tsv)
+
+
+
+## IMU
+```yaml
+connectors:
+  X1:
+    type: MQS
+    pinlabels: [GND, CAN L, CAN H, Power]
+    manufacturer: TE
+    mpn: '<a href=https://www.te.com/usa-en/product-1-967640-1.html>1-967640-1</a>'
+  MBB1:
+    pincount: 48
+    hide_disconnected_pins: true
+  MBB2:
+    pincount: 36
+    hide_disconnected_pins: true
+
+cables:
+  W1:
+    wirecount: 4
+    colors: [BK, BUGY, WHGY, WHGN]
+    notes: Bosch IMU
+
+connections:
+  -
+    - X1: [GND, CAN L, CAN H]
+    - W1: [1,2,3]
+    - MBB1: [3-1]
+  -
+    - X1: [Power]
+    - W1: [4]
+    - MBB2: [2]
+```
+
+![](IMU.png)
+
+[Source](IMU.yml) - [Bill of Materials](IMU.bom.tsv)
 
 
 
@@ -434,6 +278,113 @@ connections:
 
 
 
+## MBB
+```yaml
+connectors:
+  MBB1:
+#    pincount: 48
+    pinlabels: [CANH-c,CANL-c,CANc_4pin_BK,'n.c',CANH-a,CANL-a,'GND, Dash','n.c',CANH-b,CANL-b,'GND, CCM','12v, OBDII','GND, OBDII','RX, OBDII','TX, OBDII','n.c',
+      ' ',' ',' ',' ',' ',' ',' ','n.c',Fnt8pin_BNBU,Fnt8pin_BUGY,Fnt8pin_BN,Fnt8pin_BK,Fnt8pin_BURD,Fnt8pin_RDBK,Fnt8pin_BK,2pin_WHBK,
+      4pin_BUBK,'Thermistor 1','Thermistor 2',3P_BK,3P_WH,3P_RD,'Unknown, OBDII',Fnt2pinA_BNGY,Fnt2pinB_WH,'BMS 1','BMS 2','BMS 3','BMS 4',5V,'Front brake SW','REARLIGHT_WHBK']
+
+  MBB2:
+#    pincount: 36
+    pinlabels: ['GND, Dash',36WHOR_4pCAN_WHGN,HEADLIGHT_RDBK,BK1GRIP_HEAT,YE1GRIP_HEAT,'+12V, ACC',7lights_BN,CANc_REAR4P_OR,REARLIGHT_RDWH,'Front Turn Sig, RDGU','Front Turn Sig, WHGU','Heater, 12V battery',
+      'BMS p7-YEGY','+5v, BMS_kick-RD','Sig, Kickstand','GND, Kickstand',YE2GRIP_HEAT,'+12V, ACC',19lights_BN,'+12v, Key on','+12v, Key power','Rear Turn, Left','Rear Turn, Right','n.c',
+      'PWR 1','PWR 2','PWR 3','PWR 4','PWR 5','12V #3','12V #4','12V #5','Chassis ground','GND, KEY',35_4pin_RDWH,36_4pin_RDBK]    
+
+  Thermistor:
+    type: NTC
+    pincount: 2 
+  Licence plate:
+    pinlabels: [+12v,GND]
+    notes: Light
+  DIAG:
+    type: OBDII
+    pinlabels: [' ',' ',' ',CHASSIS,GND,'CAN H',' ',RX,TX,' ','CCM GND',' ',' ','CAN L',' ',+12v]
+    hide_disconnected_pins: true
+    notes: fixme
+  DIAG2:
+    style: simple
+    pincount: 1
+  X1grip:
+    pincount: 2
+  X2grip:
+    pincount: 2
+  KICK:
+    pinlabels: [OUT,VCC,GND]
+    notes: 'fixme: pin #?'
+  Rear Lights:
+    type: MX150
+    pinlabels: [RIGHT,GND,LEFT,GND,'5','6','7','8']
+    manufacturer: Molex
+    mpn: '<a href=https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/334/33482/334824801_sd.pdf>33482-4801</a>'
+
+
+cables:
+  W1:
+    wirecount: 48
+    colors: [WHGY, BUGY, BK,' ', WH, BU, BK,' ', WH, BU, BK, BU, BK, BKRD, BKGY,' ',
+      ' ',' ',' ',' ',' ',' ',' ',' ', BNBU, BUGY, BN, BK, BURD, RDBK, BK, WHBK, 
+      BUBK, BK, BK, BK, WH, RD, GY, BNGY, WH, RD, RD, BNWH, BKWH, RD, WHBK, WHBK]
+
+  W2:
+    wirecount: 36
+    colors: [BNBU, WHOG, RDBK, BK, YE, BU, BN, OG, RDWH, RDGY, WHGY, CUBK,
+      YEGY, RD, YEBK, BK, YE, BU, BN, YEGN, YEGY, RDGY, WHGN,' ',
+      BU, BU, BU, BU, BU, BU, BU, BU, BK, BK, RDWH, RDBK]
+
+
+connections:
+  -
+    - MBB1: [1-3,5-7,9-15,25-48]
+    - W1: [1-3,5-7,9-15,25-48]
+#~~~
+  -
+    - W1: [34,35]  
+    - Thermistor: [1-2]
+  -
+    - W1: [13,9,14,15,11,10,12]
+    - DIAG: [GND,'CAN H',RX,TX,'CCM GND','CAN L',+12v]
+
+
+  -
+    - W1: [39]
+    - DIAG2: [1]
+
+  -
+    - MBB2: [1-23,25-36]
+    - W2: [1-23,25-36]
+#~~~
+  -
+    - W2: [19,33]
+    - Licence plate: [+12v,GND]
+  -
+    - W2: [5,4]
+    - X1grip: [1-2]
+
+  -
+    - W2: [17,33]  
+    - X2grip: [1-2]
+
+  -
+    - W2: [15,14,16]
+    - KICK: [OUT,VCC,GND]
+
+  -
+    - W2: [23,33,22,33,9,33,7]
+    - Rear Lights: [1-7]
+  -
+    - W1: [48]
+    - Rear Lights: [8]
+  ```
+
+![](MBB.png)
+
+[Source](MBB.yml) - [Bill of Materials](MBB.bom.tsv)
+
+
+
 ## motor
 ```yaml
 connectors:
@@ -490,6 +441,58 @@ additional_bom_items:
 ![](motor.png)
 
 [Source](motor.yml) - [Bill of Materials](motor.bom.tsv)
+
+
+
+## OBDII
+```yaml
+connectors:
+  DIAG:
+    type: OBDII
+    pinlabels: [' ',' ',' ',CHASSIS,GND,CANH,' ',RX,TX,' ','CCM GND',' ',' ',CANL,' ',+12v]
+    hide_disconnected_pins: true
+  MBB:
+    pincount: 48
+    hide_disconnected_pins: true
+  MBB2:
+    pincount: 36
+    hide_disconnected_pins: true
+  DIAG1:
+    style: simple
+    pincount: 1
+
+cables:
+  W1:
+    wirecount: 7
+    length: 3
+    colors: [BK, WH, BKRD, BKSL, BK, BU, BU]
+  W2:
+    wirecount: 1
+    colors: [BKBU]
+  W3:
+    wirecount: 1
+    color: GY
+
+connections:
+  -
+    - DIAG: [GND,CANH,RX,TX,'CCM GND',CANL,+12v]
+    - W1: [1-7]
+    - MBB: [13,9,14,15,11,10,12]
+  -
+    - W3: [1]
+    - DIAG1: [1]
+  -
+    - W3: [1]
+    - MBB: [39]
+  -
+    - DIAG: [CHASSIS]
+    - W2: [1]
+    - MBB2: [33]
+```
+
+![](OBDII.png)
+
+[Source](OBDII.yml) - [Bill of Materials](OBDII.bom.tsv)
 
 
 

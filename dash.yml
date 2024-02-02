@@ -4,12 +4,14 @@ connectors:
     hide_disconnected_pins: true
   MBB1:
     pincount: 48
+  #  pinlabels: [CANH,CANL,GND]
     hide_disconnected_pins: true
   MBB2:
     pincount: 36
     hide_disconnected_pins: true
   MODE:
-    pincount: 10
+  #  pincount: 10
+    pinlabels: [LeftTurn,LeftSwitch,Enter,RightSwitch,GND,' ',Hazard,GND,RightTurn,Cancle]
     hide_disconnected_pins: true
   X1:
     pincount: 8
@@ -25,9 +27,9 @@ cables:
 
 connections:
   -
-    - DASH: [4,7,8,12,14,15,17,20]
-    - W1: [2,4,5,7-11] 
-    - MODE: [5,4,10,9,1,2,3,7]
+    - DASH: [1,4,7,8,12,14,15,17,20]
+    - W1: [1,2,4,5,7-11] 
+    - MODE: [5,5,4,10,9,1,2,3,7]
   -
     - DASH: [31-34]
     - W1: [15-18]

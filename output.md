@@ -113,7 +113,7 @@ connections:
   -
     - DASH: [1,4,7,8,12,14,15,17,20]
     - W1: [1,2,4,5,7-11] 
-    - MODE: [5,5,4,10,9,1,2,3,7]
+    - MODE: [5,8,4,10,9,1,2,3,7]
   -
     - DASH: [31-34]
     - W1: [15-18]
@@ -286,14 +286,14 @@ connectors:
   MBB1:
 #    pincount: 48
     pinlabels: [CANH-c,CANL-c,CANc_4pin_BK,'n.c',CANH-a,CANL-a,'GND, Dash','n.c',CANH-b,CANL-b,'GND, CCM','12v, OBDII','GND, OBDII','RX, OBDII','TX, OBDII','n.c',
-      ' ',' ',' ',' ',' ',' ',' ','n.c',Fnt8pin_BNBU,Fnt8pin_BUGY,Fnt8pin_BN,Fnt8pin_BK,Fnt8pin_BURD,Fnt8pin_RDBK,Fnt8pin_BK,2pin_WHBK,
+      ' ',' ',' ',' ',' ',' ',' ','n.c',Throttle_BNBU,Throttle_BUGY,Throttle_BN,Throttle_BK,Throttle_BURD,Throttle_RDBK,Throttle_BK,'ABS pressure sw',
       4pin_BUBK,'Thermistor 1','Thermistor 2',3P_BK,3P_WH,3P_RD,'Unknown, OBDII',Fnt2pinA_BNGY,Fnt2pinB_WH,'BMS 1','BMS 2','BMS 3','BMS 4',5V,'Front brake SW','REARLIGHT_WHBK']
 
   MBB2:
 #    pincount: 36
-    pinlabels: ['GND, Dash',36WHOR_4pCAN_WHGN,HEADLIGHT_RDBK,BK1GRIP_HEAT,YE1GRIP_HEAT,'+12V, ACC',7lights_BN,CANc_REAR4P_OR,REARLIGHT_RDWH,'Front Turn Sig, RDGU','Front Turn Sig, WHGU','Heater, 12V battery',
-      'BMS p7-YEGY','+5v, BMS_kick-RD','Sig, Kickstand','GND, Kickstand',YE2GRIP_HEAT,'+12V, ACC',19lights_BN,'+12v, Key on','+12v, Key power','Rear Turn, Left','Rear Turn, Right','n.c',
-      'PWR 1','PWR 2','PWR 3','PWR 4','PWR 5','12V #3','12V #4','12V #5','Chassis ground','GND, KEY',35_4pin_RDWH,36_4pin_RDBK]    
+    pinlabels: ['12V, Dash','12V, IMU HCU','12V, Headlight','12V, heated grip','12V, heated grip','12V, ACC','12V Headlight',CANc_REAR4P_OR,REARLIGHT_RDWH,'Front Turn Sig, RDGU','Front Turn Sig, WHGU','Heater, 12V battery',
+      'BMS p7-YEGY','+5v, BMS_kick-RD','Sig, Kickstand','GND, Kickstand',YE2GRIP_HEAT,'12V, ACC','12V Headlight','+12V, Key on','+12V, Key power','Rear Turn, Left','Rear Turn, Right','n.c',
+      'PWR 1','PWR 2','PWR 3','PWR 4','PWR 5','12V #3','12V #4','12V #5','Chassis ground','GND, KEY',cCNTRL_Kswitch_RDWH,cCNTRL_Kswitch_RDBK]    
 
   Thermistor:
     type: NTC

@@ -1,13 +1,12 @@
+TOOLBOX = fedora
+
 setup:
-	python3 -m pip install -r requirements.txt
+	toolbox run --container $(TOOLBOX) uv sync
 
 build:
-	python3 build.py build
+	toolbox run --container $(TOOLBOX) uv run python build.py build
 
 clean:
-	python3 build.py clean
+	toolbox run --container $(TOOLBOX) uv run python build.py clean
 
-restore:
-	python3 build.py restore
-
-default: clean build
+.PHONY: setup build clean

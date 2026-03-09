@@ -1,6 +1,16 @@
-### Readme
+### Zero SR/S Wire Harness
 
-This documents a trace of a Zero Motorcycles SR/F model (Gen3 FST platform) wiring harness.
+Wiring harness documentation traced from a Zero Motorcycles SR/S (Gen3 FST platform).
 
+**[View diagrams on GitHub Pages](https://atomicdog.github.io/ZeroMotoWireharness/)**
 
-[wire harness](output.md)
+#### Development
+
+Requires [uv](https://docs.astral.sh/uv/) and system `graphviz`.
+
+```bash
+make setup   # install dependencies
+make build   # generate diagrams → docs/
+```
+
+Harness sources are in `harness/`. Diagrams are built by CI and published to the `gh-pages` branch on every push to `master`.

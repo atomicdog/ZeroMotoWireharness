@@ -1,0 +1,8 @@
+[project]
+name = "zero-srs-wireharness"
+version = "0.1.0"
+description = "Zero SR-S motorcycle wire harness documentation"
+requires-python = ">=3.9"
+dependencies = [
+    "wireviz==0.3.2",
+]

@@ -1,6 +1,16 @@
-output/*
-*.tsv
-*.gv
-*.html
-*.svg
+# Generated output — deployed via gh-pages branch by CI
+docs/
+
+# Leftover generated files from local builds
+harness/*.gv
+harness/*.bom.tsv
+harness/*.png
+harness/*.svg
+harness/*.html
+
+# Backups and drafts
 *.bak
+wh.yml.txt
+
+# UV
+.venv/

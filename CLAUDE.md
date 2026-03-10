@@ -19,7 +19,7 @@ make clean        # remove generated output
 uv run wireviz harness/<name>.yml
 ```
 
-`build.py` processes all `harness/*.yml` files, moves generated files to `docs/`, and produces `docs/index.html`. In VS Code, Ctrl+Shift+B offers "build current file" or "build all" tasks (both run via toolbox).
+`build.py` processes all `harness/*.yml` files, moves generated files to `docs/`, and produces `docs/index.html`. In VS Code, Ctrl+Shift+B offers "build current file" or "build all" tasks.
 
 ## Repository Structure
 

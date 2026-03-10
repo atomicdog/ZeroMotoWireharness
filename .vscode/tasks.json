@@ -6,8 +6,8 @@
         {
             "label": "build current file",
             "type": "shell",
-            "command": "toolbox",
-            "args": ["run", "--container", "fedora", "uv", "run", "wireviz", "${file}"],
+            "command": "uv",
+            "args": ["run", "wireviz", "${file}"],
             "group": "build",
             "presentation": {
                 "echo": true,
@@ -21,8 +21,8 @@
         {
             "label": "build all",
             "type": "shell",
-            "command": "toolbox",
-            "args": ["run", "--container", "fedora", "uv", "run", "python", "build.py", "build"],
+            "command": "uv",
+            "args": ["run", "python", "build.py", "build"],
             "group": "build",
             "presentation": {
                 "echo": true,

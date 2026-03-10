@@ -8,15 +8,15 @@ This is a WireViz project documenting the wire harness of a Zero SR/S electric m
 
 ## Setup and Build
 
-Builds run inside the `fedora` Fedora toolbox container, which provides `graphviz` and `uv`.
+Builds run directly on the host using `uv`. `graphviz` must be installed on the host (`dot` in PATH).
 
 ```bash
-make setup        # uv sync inside toolbox
+make setup        # uv sync
 make build        # build all harness diagrams → docs/
 make clean        # remove generated output
 
-# Build a single file from within the toolbox
-toolbox run --container fedora uv run wireviz harness/<name>.yml
+# Build a single file
+uv run wireviz harness/<name>.yml
 ```
 
 `build.py` processes all `harness/*.yml` files, moves generated files to `docs/`, and produces `docs/index.html`. In VS Code, Ctrl+Shift+B offers "build current file" or "build all" tasks (both run via toolbox).

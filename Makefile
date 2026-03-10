@@ -1,12 +1,10 @@
-TOOLBOX = fedora
-
 setup:
-	toolbox run --container $(TOOLBOX) uv sync
+	uv sync
 
 build:
-	toolbox run --container $(TOOLBOX) uv run python build.py build
+	uv run python build.py build
 
 clean:
-	toolbox run --container $(TOOLBOX) uv run python build.py clean
+	uv run python build.py clean
 
 .PHONY: setup build clean

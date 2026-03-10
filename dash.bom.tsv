@@ -1,0 +1,8 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 18 wires	0	m	W1
+2	Connector, 10 pins	1		MODE
+3	Connector, 2 pins	1		BAT
+4	Connector, 34 pins	1		DASH
+5	Connector, 36 pins	1		MBB2
+6	Connector, 48 pins	1		MBB1
+7	Connector, 8 pins	1		X1

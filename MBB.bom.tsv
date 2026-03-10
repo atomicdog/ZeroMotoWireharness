@@ -1,0 +1,11 @@
+Id	Description	Qty	Unit	Designators	Manufacturer	MPN
+1	Cable, 36 wires	0	m	W2		
+2	Cable, 48 wires	0	m	W1		
+3	Connector	1		DIAG2		
+4	Connector, 2 pins	3		Licence plate, X1grip, X2grip		
+5	Connector, 3 pins	1		KICK		
+6	Connector, 36 pins	1		MBB2		
+7	Connector, 48 pins	1		MBB1		
+8	Connector, MX150, 8 pins	1		Rear Lights	Molex	33482-4801
+9	Connector, NTC, 2 pins	1		Thermistor		
+10	Connector, OBDII, 16 pins	1		DIAG		

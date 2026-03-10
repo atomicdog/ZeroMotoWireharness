@@ -2,6 +2,7 @@
 docs/
 
 # Leftover generated files from local builds
+/*.png
 harness/*.gv
 harness/*.bom.tsv
 harness/*.png

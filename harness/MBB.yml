@@ -1,15 +1,15 @@
 connectors:
   MBB1:
 #    pincount: 48
-    pinlabels: [CANH-c,CANL-c,CANc_4pin_BK,'n.c',CANH-a,CANL-a,'GND, Dash','n.c',CANH-b,CANL-b,'GND, CCM','12v, OBDII','GND, OBDII','RX, OBDII','TX, OBDII','n.c',
-      ' ',' ',' ',' ',' ',' ',' ','n.c',Throttle_BNBU,Throttle_BUGY,Throttle_BN,Throttle_BK,Throttle_BURD,Throttle_RDBK,Throttle_BK,'ABS pressure sw',
-      4pin_BUBK,'Thermistor 1','Thermistor 2',3P_BK,3P_WH,3P_RD,'Unknown, OBDII',Fnt2pinA_BNGY,Fnt2pinB_WH,'BMS 1','BMS 2','BMS 3','BMS 4',5V,'Front brake SW','REARLIGHT_WHBK']
+    pinlabels: ['CANH C','CANL C',CANc_4pin_BK,'n.c','CANH A','CANL A','GND, Dash','n.c','CANH B','CANL B','GND, CCM','12v, OBDII','GND, OBDII','RX, OBDII','TX, OBDII','3.3V',
+      'GND','TCK','TMS','TRST','TDO','TDI','?12V?','?12V? 2',Throttle_BNBU,Throttle_BUGY,Throttle_BN,Throttle_BK,Throttle_BURD,Throttle_RDBK,Throttle_BK,'ABS pressure sw',
+      4pin_BUBK,'Thermistor 1','Thermistor 2','Chrg Port latch 3','Chrg Port latch 2','Chrg Port latch 1','Unused, OBDII',Fnt2pinA_BNGY,Fnt2pinB_WH,'BMS 1','BMS 2','BMS 3','BMS 4',5V,'Front brake SW','REARLIGHT_WHBK']
 
   MBB2:
 #    pincount: 36
     pinlabels: ['12V, Dash','12V, IMU HCU','12V, Headlight','12V, heated grip','12V, heated grip','12V, ACC','12V Headlight',CANc_REAR4P_OR,REARLIGHT_RDWH,'Front Turn Sig, RDGU','Front Turn Sig, WHGU','Heater, 12V battery',
       'BMS p7-YEGY','+5v, BMS_kick-RD','Sig, Kickstand','GND, Kickstand',YE2GRIP_HEAT,'12V, ACC','12V Headlight','+12V, Key on','+12V, Key power','Rear Turn, Left','Rear Turn, Right','n.c',
-      'PWR 1','PWR 2','PWR 3','PWR 4','PWR 5','12V #3','12V #4','12V #5','Chassis ground','GND, KEY',cCNTRL_Kswitch_RDWH,cCNTRL_Kswitch_RDBK]    
+      'PWR 1','PWR 2','PWR 3','PWR 4','PWR 5','12V #3','12V #4','12V #5','Chassis ground','GND, KEY','CC|Kill switch','Kill|CC switch']
 
   Thermistor:
     type: NTC
@@ -22,7 +22,7 @@ connectors:
     pinlabels: [' ',' ',' ',CHASSIS,GND,'CAN H',' ',RX,TX,' ','CCM GND',' ',' ','CAN L',' ',+12v]
     hide_disconnected_pins: true
     notes: fixme
-  DIAG2:
+  UNUSED_OBD2_REAR:
     style: simple
     pincount: 1
   X1grip:
@@ -44,7 +44,7 @@ cables:
     wirecount: 48
     colors: [WHGY, BUGY, BK,' ', WH, BU, BK,' ', WH, BU, BK, BU, BK, BKRD, BKGY,' ',
       ' ',' ',' ',' ',' ',' ',' ',' ', BNBU, BUGY, BN, BK, BURD, RDBK, BK, WHBK, 
-      BUBK, BK, BK, BK, WH, RD, GY, BNGY, WH, RD, RD, BNWH, BKWH, RD, WHBK, WHBK]
+      BUBK, BK, BK, BK, RD, WH, GY, BNGY, WH, RD, RD, BNWH, BKWH, RD, WHBK, WHBK]
 
   W2:
     wirecount: 36
@@ -68,7 +68,7 @@ connections:
 
   -
     - W1: [39]
-    - DIAG2: [1]
+    - UNUSED_OBD2_REAR: [1]
 
   -
     - MBB2: [1-23,25-36]

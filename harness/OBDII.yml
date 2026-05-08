@@ -9,7 +9,7 @@ connectors:
   MBB2:
     pincount: 36
     hide_disconnected_pins: true
-  DIAG1:
+  UNUSED:
     style: simple
     pincount: 1
 
@@ -32,7 +32,7 @@ connections:
     - MBB: [13,9,14,15,11,10,12]
   -
     - W3: [1]
-    - DIAG1: [1]
+    - UNUSED: [1]
   -
     - W3: [1]
     - MBB: [39]

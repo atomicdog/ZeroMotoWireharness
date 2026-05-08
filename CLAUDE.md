@@ -44,7 +44,7 @@ Each harness file has three sections:
 
 ## Key Conventions
 
-- `MBB1` (48-pin) and `MBB2` (36-pin) are the Main Battery Box connectors and appear across multiple files — pin numbers must stay consistent with `harness/MBB.yml` as the reference
+- `MBB1` (48-pin) and `MBB2` (36-pin) are the Main Bike Board connectors and appear across multiple files — pin numbers must stay consistent with `harness/MBB.yml` as the reference
 - `#~~~` marks intentional breaks/separators in connection blocks
 - `fixme` notes flag pins or connectors with uncertain assignments
 - Color codes follow standard automotive two-letter abbreviations

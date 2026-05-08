@@ -19,11 +19,11 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
-    <td>CANH-c</td>
+    <td>CANH C</td>
     <td port="p1r">1</td>
    </tr>
    <tr>
-    <td>CANL-c</td>
+    <td>CANL C</td>
     <td port="p2r">2</td>
    </tr>
    <tr>
@@ -35,11 +35,11 @@ graph {
     <td port="p4r">4</td>
    </tr>
    <tr>
-    <td>CANH-a</td>
+    <td>CANH A</td>
     <td port="p5r">5</td>
    </tr>
    <tr>
-    <td>CANL-a</td>
+    <td>CANL A</td>
     <td port="p6r">6</td>
    </tr>
    <tr>
@@ -51,11 +51,11 @@ graph {
     <td port="p8r">8</td>
    </tr>
    <tr>
-    <td>CANH-b</td>
+    <td>CANH B</td>
     <td port="p9r">9</td>
    </tr>
    <tr>
-    <td>CANL-b</td>
+    <td>CANL B</td>
     <td port="p10r">10</td>
    </tr>
    <tr>
@@ -79,39 +79,39 @@ graph {
     <td port="p15r">15</td>
    </tr>
    <tr>
-    <td>n.c</td>
+    <td>3.3V</td>
     <td port="p16r">16</td>
    </tr>
    <tr>
-    <td> </td>
+    <td>GND</td>
     <td port="p17r">17</td>
    </tr>
    <tr>
-    <td> </td>
+    <td>TCK</td>
     <td port="p18r">18</td>
    </tr>
    <tr>
-    <td> </td>
+    <td>TMS</td>
     <td port="p19r">19</td>
    </tr>
    <tr>
-    <td> </td>
+    <td>TRST</td>
     <td port="p20r">20</td>
    </tr>
    <tr>
-    <td> </td>
+    <td>TDO</td>
     <td port="p21r">21</td>
    </tr>
    <tr>
-    <td> </td>
+    <td>TDI</td>
     <td port="p22r">22</td>
    </tr>
    <tr>
-    <td> </td>
+    <td>?12V?</td>
     <td port="p23r">23</td>
    </tr>
    <tr>
-    <td>n.c</td>
+    <td>?12V? 2</td>
     <td port="p24r">24</td>
    </tr>
    <tr>
@@ -159,19 +159,19 @@ graph {
     <td port="p35r">35</td>
    </tr>
    <tr>
-    <td>3P_BK</td>
+    <td>Chrg Port latch 3</td>
     <td port="p36r">36</td>
    </tr>
    <tr>
-    <td>3P_WH</td>
+    <td>Chrg Port latch 2</td>
     <td port="p37r">37</td>
    </tr>
    <tr>
-    <td>3P_RD</td>
+    <td>Chrg Port latch 1</td>
     <td port="p38r">38</td>
    </tr>
    <tr>
-    <td>Unknown, OBDII</td>
+    <td>Unused, OBDII</td>
     <td port="p39r">39</td>
    </tr>
    <tr>
@@ -365,11 +365,11 @@ graph {
     <td port="p34r">34</td>
    </tr>
    <tr>
-    <td>cCNTRL_Kswitch_RDWH</td>
+    <td>CC|Kill switch</td>
     <td port="p35r">35</td>
    </tr>
    <tr>
-    <td>cCNTRL_Kswitch_RDBK</td>
+    <td>Kill|CC switch</td>
     <td port="p36r">36</td>
    </tr>
   </table>
@@ -484,11 +484,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	DIAG2 [label=<
+	UNUSED_OBD2_REAR [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">DIAG2</td>
+   <td balign="left">UNUSED_OBD2_REAR</td>
   </tr></table>
  </td></tr>
 </table>
@@ -682,9 +682,9 @@ graph {
 	MBB1:p35r:e -- W1:w35:w
 	edge [color="#000000:#000000:#000000:#000000:#000000"]
 	MBB1:p36r:e -- W1:w36:w
-	edge [color="#000000:#ffffff:#ffffff:#ffffff:#000000"]
-	MBB1:p37r:e -- W1:w37:w
 	edge [color="#000000:#ff0000:#ff0000:#ff0000:#000000"]
+	MBB1:p37r:e -- W1:w37:w
+	edge [color="#000000:#ffffff:#ffffff:#ffffff:#000000"]
 	MBB1:p38r:e -- W1:w38:w
 	edge [color="#000000:#999999:#999999:#999999:#000000"]
 	MBB1:p39r:e -- W1:w39:w
@@ -725,7 +725,7 @@ graph {
 	edge [color="#000000:#0066ff:#0066ff:#0066ff:#000000"]
 	W1:w12:e -- DIAG:p16l:w
 	edge [color="#000000:#999999:#999999:#999999:#000000"]
-	W1:w39:e -- DIAG2:w
+	W1:w39:e -- UNUSED_OBD2_REAR:w
 	edge [color="#000000:#ffffff:#000000:#ffffff:#000000"]
 	W1:w48:e -- "Rear Lights":p8l:w
 	W1 [label=<
@@ -744,7 +744,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>MBB1:1:CANH-c</td>
+    <td>MBB1:1:CANH C</td>
     <td>
      1:WHGY
     </td>
@@ -762,7 +762,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>MBB1:2:CANL-c</td>
+    <td>MBB1:2:CANL C</td>
     <td>
      2:BUGY
     </td>
@@ -816,7 +816,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>MBB1:5:CANH-a</td>
+    <td>MBB1:5:CANH A</td>
     <td>
      5:WH
     </td>
@@ -834,7 +834,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>MBB1:6:CANL-a</td>
+    <td>MBB1:6:CANL A</td>
     <td>
      6:BU
     </td>
@@ -888,7 +888,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>MBB1:9:CANH-b</td>
+    <td>MBB1:9:CANH B</td>
     <td>
      9:WH
     </td>
@@ -906,7 +906,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>MBB1:10:CANL-b</td>
+    <td>MBB1:10:CANL B</td>
     <td>
      10:BU
     </td>
@@ -1374,7 +1374,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>MBB1:36:3P_BK</td>
+    <td>MBB1:36:Chrg Port latch 3</td>
     <td>
      36:BK
     </td>
@@ -1392,9 +1392,9 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>MBB1:37:3P_WH</td>
+    <td>MBB1:37:Chrg Port latch 2</td>
     <td>
-     37:WH
+     37:RD
     </td>
     <td><!-- 37_out --></td>
    </tr>
@@ -1402,17 +1402,17 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w37" height="10">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
    </tr>
    <tr>
-    <td>MBB1:38:3P_RD</td>
+    <td>MBB1:38:Chrg Port latch 1</td>
     <td>
-     38:RD
+     38:WH
     </td>
     <td><!-- 38_out --></td>
    </tr>
@@ -1420,19 +1420,19 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w38" height="10">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
    </tr>
    <tr>
-    <td>MBB1:39:Unknown, OBDII</td>
+    <td>MBB1:39:Unused, OBDII</td>
     <td>
      39:GY
     </td>
-    <td>DIAG2:1</td>
+    <td>UNUSED_OBD2_REAR:1</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w39" height="10">
@@ -2342,7 +2342,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>MBB2:35:cCNTRL_Kswitch_RDWH</td>
+    <td>MBB2:35:CC|Kill switch</td>
     <td>
      35:RDWH
     </td>
@@ -2360,7 +2360,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>MBB2:36:cCNTRL_Kswitch_RDBK</td>
+    <td>MBB2:36:Kill|CC switch</td>
     <td>
      36:RDBK
     </td>

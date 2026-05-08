@@ -2,7 +2,7 @@ Id	Description	Qty	Unit	Designators
 1	Cable, 1 wires	0	m	W2
 2	Cable, 1 wires, GY	0	m	W3
 3	Cable, 7 wires	3	m	W1
-4	Connector	1		DIAG1
+4	Connector	1		UNUSED
 5	Connector, 36 pins	1		MBB2
 6	Connector, 48 pins	1		MBB
 7	Connector, OBDII, 16 pins	1		DIAG

@@ -118,11 +118,11 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	DIAG1 [label=<
+	UNUSED [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">DIAG1</td>
+   <td balign="left">UNUSED</td>
   </tr></table>
  </td></tr>
 </table>
@@ -337,7 +337,7 @@ graph {
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ffffff:#000000"]
-	W3:w1:e -- DIAG1:w
+	W3:w1:e -- UNUSED:w
 	edge [color="#000000:#ffffff:#000000"]
 	W3:w1:e -- MBB:p39l:w
 	W3 [label=<
@@ -362,7 +362,7 @@ graph {
     <td>
      1
     </td>
-    <td>DIAG1:1</td>
+    <td>UNUSED:1</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">

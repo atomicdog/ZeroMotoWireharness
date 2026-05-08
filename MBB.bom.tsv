@@ -1,7 +1,7 @@
 Id	Description	Qty	Unit	Designators	Manufacturer	MPN
 1	Cable, 36 wires	0	m	W2		
 2	Cable, 48 wires	0	m	W1		
-3	Connector	1		DIAG2		
+3	Connector	1		UNUSED_OBD2_REAR		
 4	Connector, 2 pins	3		Licence plate, X1grip, X2grip		
 5	Connector, 3 pins	1		KICK		
 6	Connector, 36 pins	1		MBB2		

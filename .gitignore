@@ -1,5 +1,6 @@
-# Generated output — deployed via gh-pages branch by CI
-docs/
+# Generated output — site/ is deployed via gh-pages branch by CI
+docs/harness/
+site/
 
 # Leftover generated files from local builds
 /*.png
@@ -15,3 +16,6 @@ wh.yml.txt
 
 # UV
 .venv/
+
+# Local Claude Code guidance
+CLAUDE.md

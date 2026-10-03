@@ -42,14 +42,14 @@ connectors:
 cables:
   W1:
     wirecount: 48
-    colors: [WHGY, BUGY, BK,' ', WH, BU, BK,' ', WH, BU, BK, BU, BK, BKRD, BKGY,' ',
-      ' ',' ',' ',' ',' ',' ',' ',' ', BNBU, BUGY, BN, BK, BURD, RDBK, BK, WHBK, 
+    colors: [WHGY, BUGY, BK,'', WH, BU, BK,'', WH, BU, BK, BU, BK, BKRD, BKGY,'',
+      '','','','','','','','', BNBU, BUGY, BN, BK, BURD, RDBK, BK, WHBK, 
       BUBK, BK, BK, BK, RD, WH, GY, BNGY, WH, RD, RD, BNWH, BKWH, RD, WHBK, WHBK]
 
   W2:
     wirecount: 36
     colors: [BNBU, WHOG, RDBK, BK, YE, BU, BN, OG, RDWH, RDGY, WHGY, CUBK,
-      YEGY, RD, YEBK, BK, YE, BU, BN, YEGN, YEGY, RDGY, WHGN,' ',
+      YEGY, RD, YEBK, BK, YE, BU, BN, YEGN, YEGY, RDGY, WHGN,'',
       BU, BU, BU, BU, BU, BU, BU, BU, BK, BK, RDWH, RDBK]
 
 

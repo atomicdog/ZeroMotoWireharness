@@ -1,5 +1,5 @@
 [project]
-site_name = "Zero SR/S Wire Harness"
+site_name = "Zero FST Wire Harness"
 site_description = "Wiring harness documentation traced from a Zero Motorcycles SR/S (Gen3 FST platform)."
 site_url = "https://atomicdog.github.io/ZeroMotoWireharness/"
 repo_url = "https://github.com/atomicdog/ZeroMotoWireharness"

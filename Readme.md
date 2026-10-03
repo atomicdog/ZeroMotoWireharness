@@ -1,4 +1,4 @@
-### Zero SR/S Wire Harness
+### Zero FST platform Wire Harness
 
 Wiring harness documentation traced from a Zero Motorcycles SR/S (Gen3 FST platform).
 

@@ -12,7 +12,6 @@ harness/*.html
 
 # Backups and drafts
 *.bak
-wh.yml.txt
 
 # UV
 .venv/

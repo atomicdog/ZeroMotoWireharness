@@ -1,0 +1,6 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 1 wires	0	m	LOOP1, LOOP2
+2	Cable, 2 wires	0	m	W1, W2, W3
+3	Connector, 4 pins	1		Power
+4	Connector, Splice	2		S_5V, S_GND
+5	Connector, USB A, 4 pins	2		USB 1, USB 2

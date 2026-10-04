@@ -149,36 +149,36 @@
 <text text-anchor="start" x="391" y="-184.3" font-family="arial" font-size="14.00">14.0 in</text>
 <text text-anchor="start" x="312" y="-163.3" font-family="arial" font-size="14.00"> </text>
 <text text-anchor="start" x="294" y="-144.3" font-family="arial" font-size="14.00">X1:5:5</text>
-<text text-anchor="start" x="338" y="-144.3" font-family="arial" font-size="14.00"> &#160;&#160;&#160;&#160;1:WHRD &#160;&#160;&#160;</text>
+<text text-anchor="start" x="338" y="-144.3" font-family="arial" font-size="14.00"> &#160;&#160;&#160;&#160;1:RDWH &#160;&#160;&#160;</text>
 <text text-anchor="start" x="430" y="-144.3" font-family="arial" font-size="14.00">X2:4</text>
 <polygon fill="#000000" stroke="transparent" points="292,-136.5 292,-138.5 460,-138.5 460,-136.5 292,-136.5"/>
-<polygon fill="#ffffff" stroke="transparent" points="292,-134.5 292,-136.5 460,-136.5 460,-134.5 292,-134.5"/>
-<polygon fill="#ff0000" stroke="transparent" points="292,-132.5 292,-134.5 460,-134.5 460,-132.5 292,-132.5"/>
-<polygon fill="#ffffff" stroke="transparent" points="292,-130.5 292,-132.5 460,-132.5 460,-130.5 292,-130.5"/>
+<polygon fill="#ff0000" stroke="transparent" points="292,-134.5 292,-136.5 460,-136.5 460,-134.5 292,-134.5"/>
+<polygon fill="#ffffff" stroke="transparent" points="292,-132.5 292,-134.5 460,-134.5 460,-132.5 292,-132.5"/>
+<polygon fill="#ff0000" stroke="transparent" points="292,-130.5 292,-132.5 460,-132.5 460,-130.5 292,-130.5"/>
 <polygon fill="#000000" stroke="transparent" points="292,-128.5 292,-130.5 460,-130.5 460,-128.5 292,-128.5"/>
 <text text-anchor="start" x="294" y="-115.3" font-family="arial" font-size="14.00">X1:6:6</text>
-<text text-anchor="start" x="338.5" y="-115.3" font-family="arial" font-size="14.00"> &#160;&#160;&#160;&#160;2:WHBK &#160;&#160;&#160;</text>
-<text text-anchor="start" x="430" y="-115.3" font-family="arial" font-size="14.00">X2:3</text>
+<text text-anchor="start" x="350" y="-115.3" font-family="arial" font-size="14.00"> &#160;&#160;&#160;&#160;2:BK &#160;&#160;&#160;</text>
+<text text-anchor="start" x="430" y="-115.3" font-family="arial" font-size="14.00">X2:2</text>
 <polygon fill="#000000" stroke="transparent" points="292,-107.5 292,-109.5 460,-109.5 460,-107.5 292,-107.5"/>
-<polygon fill="#ffffff" stroke="transparent" points="292,-105.5 292,-107.5 460,-107.5 460,-105.5 292,-105.5"/>
+<polygon fill="#000000" stroke="transparent" points="292,-105.5 292,-107.5 460,-107.5 460,-105.5 292,-105.5"/>
 <polygon fill="#000000" stroke="transparent" points="292,-103.5 292,-105.5 460,-105.5 460,-103.5 292,-103.5"/>
-<polygon fill="#ffffff" stroke="transparent" points="292,-101.5 292,-103.5 460,-103.5 460,-101.5 292,-101.5"/>
+<polygon fill="#000000" stroke="transparent" points="292,-101.5 292,-103.5 460,-103.5 460,-101.5 292,-101.5"/>
 <polygon fill="#000000" stroke="transparent" points="292,-99.5 292,-101.5 460,-101.5 460,-99.5 292,-99.5"/>
 <text text-anchor="start" x="294" y="-86.3" font-family="arial" font-size="14.00">X1:7:7</text>
-<text text-anchor="start" x="350" y="-86.3" font-family="arial" font-size="14.00"> &#160;&#160;&#160;&#160;3:BK &#160;&#160;&#160;</text>
-<text text-anchor="start" x="430" y="-86.3" font-family="arial" font-size="14.00">X2:2</text>
+<text text-anchor="start" x="350" y="-86.3" font-family="arial" font-size="14.00"> &#160;&#160;&#160;&#160;3:BN &#160;&#160;&#160;</text>
+<text text-anchor="start" x="430" y="-86.3" font-family="arial" font-size="14.00">X2:1</text>
 <polygon fill="#000000" stroke="transparent" points="292,-78.5 292,-80.5 460,-80.5 460,-78.5 292,-78.5"/>
-<polygon fill="#000000" stroke="transparent" points="292,-76.5 292,-78.5 460,-78.5 460,-76.5 292,-76.5"/>
-<polygon fill="#000000" stroke="transparent" points="292,-74.5 292,-76.5 460,-76.5 460,-74.5 292,-74.5"/>
-<polygon fill="#000000" stroke="transparent" points="292,-72.5 292,-74.5 460,-74.5 460,-72.5 292,-72.5"/>
+<polygon fill="#895956" stroke="transparent" points="292,-76.5 292,-78.5 460,-78.5 460,-76.5 292,-76.5"/>
+<polygon fill="#895956" stroke="transparent" points="292,-74.5 292,-76.5 460,-76.5 460,-74.5 292,-74.5"/>
+<polygon fill="#895956" stroke="transparent" points="292,-72.5 292,-74.5 460,-74.5 460,-72.5 292,-72.5"/>
 <polygon fill="#000000" stroke="transparent" points="292,-70.5 292,-72.5 460,-72.5 460,-70.5 292,-70.5"/>
 <text text-anchor="start" x="294" y="-57.3" font-family="arial" font-size="14.00">X1:8:8</text>
-<text text-anchor="start" x="350" y="-57.3" font-family="arial" font-size="14.00"> &#160;&#160;&#160;&#160;4:BN &#160;&#160;&#160;</text>
-<text text-anchor="start" x="430" y="-57.3" font-family="arial" font-size="14.00">X2:1</text>
+<text text-anchor="start" x="338.5" y="-57.3" font-family="arial" font-size="14.00"> &#160;&#160;&#160;&#160;4:WHBK &#160;&#160;&#160;</text>
+<text text-anchor="start" x="430" y="-57.3" font-family="arial" font-size="14.00">X2:3</text>
 <polygon fill="#000000" stroke="transparent" points="292,-49.5 292,-51.5 460,-51.5 460,-49.5 292,-49.5"/>
-<polygon fill="#895956" stroke="transparent" points="292,-47.5 292,-49.5 460,-49.5 460,-47.5 292,-47.5"/>
-<polygon fill="#895956" stroke="transparent" points="292,-45.5 292,-47.5 460,-47.5 460,-45.5 292,-45.5"/>
-<polygon fill="#895956" stroke="transparent" points="292,-43.5 292,-45.5 460,-45.5 460,-43.5 292,-43.5"/>
+<polygon fill="#ffffff" stroke="transparent" points="292,-47.5 292,-49.5 460,-49.5 460,-47.5 292,-47.5"/>
+<polygon fill="#000000" stroke="transparent" points="292,-45.5 292,-47.5 460,-47.5 460,-45.5 292,-45.5"/>
+<polygon fill="#ffffff" stroke="transparent" points="292,-43.5 292,-45.5 460,-45.5 460,-43.5 292,-43.5"/>
 <polygon fill="#000000" stroke="transparent" points="292,-41.5 292,-43.5 460,-43.5 460,-41.5 292,-41.5"/>
 <text text-anchor="start" x="312" y="-28.3" font-family="arial" font-size="14.00"> </text>
 <polygon fill="none" stroke="black" points="292,0.5 292,-22.5 460,-22.5 460,0.5 292,0.5"/>
@@ -188,54 +188,54 @@
 <g id="edge9" class="edge">
 <title>X1:e&#45;&#45;BrakeLight:w</title>
 <path fill="none" stroke="#000000" stroke-width="2" d="M129,-197.5C203.1,-201.16 208.93,-133.16 291,-129.5"/>
-<path fill="none" stroke="#ffffff" stroke-width="2" d="M129,-199.5C205.09,-201.33 210.92,-133.33 291,-131.5"/>
-<path fill="none" stroke="#ff0000" stroke-width="2" d="M129,-201.5C207.09,-201.5 212.91,-133.5 291,-133.5"/>
-<path fill="none" stroke="#ffffff" stroke-width="2" d="M129,-203.5C209.08,-201.67 214.91,-133.67 291,-135.5"/>
+<path fill="none" stroke="#ff0000" stroke-width="2" d="M129,-199.5C205.09,-201.33 210.92,-133.33 291,-131.5"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M129,-201.5C207.09,-201.5 212.91,-133.5 291,-133.5"/>
+<path fill="none" stroke="#ff0000" stroke-width="2" d="M129,-203.5C209.08,-201.67 214.91,-133.67 291,-135.5"/>
 <path fill="none" stroke="#000000" stroke-width="2" d="M129,-205.5C211.07,-201.84 216.9,-133.84 291,-137.5"/>
 </g>
 <!-- X1&#45;&#45;BrakeLight -->
 <g id="edge11" class="edge">
 <title>X1:e&#45;&#45;BrakeLight:w</title>
 <path fill="none" stroke="#000000" stroke-width="2" d="M129,-174.5C204.16,-178.3 207.85,-104.3 291,-100.5"/>
-<path fill="none" stroke="#ffffff" stroke-width="2" d="M129,-176.5C206.16,-178.4 209.85,-104.4 291,-102.5"/>
+<path fill="none" stroke="#000000" stroke-width="2" d="M129,-176.5C206.16,-178.4 209.85,-104.4 291,-102.5"/>
 <path fill="none" stroke="#000000" stroke-width="2" d="M129,-178.5C208.16,-178.5 211.84,-104.5 291,-104.5"/>
-<path fill="none" stroke="#ffffff" stroke-width="2" d="M129,-180.5C210.15,-178.6 213.84,-104.6 291,-106.5"/>
+<path fill="none" stroke="#000000" stroke-width="2" d="M129,-180.5C210.15,-178.6 213.84,-104.6 291,-106.5"/>
 <path fill="none" stroke="#000000" stroke-width="2" d="M129,-182.5C212.15,-178.7 215.84,-104.7 291,-108.5"/>
 </g>
 <!-- X1&#45;&#45;BrakeLight -->
 <g id="edge13" class="edge">
 <title>X1:e&#45;&#45;BrakeLight:w</title>
 <path fill="none" stroke="#000000" stroke-width="2" d="M129,-151.5C205.3,-155.43 206.7,-75.43 291,-71.5"/>
-<path fill="none" stroke="#000000" stroke-width="2" d="M129,-153.5C207.3,-155.47 208.7,-75.47 291,-73.5"/>
-<path fill="none" stroke="#000000" stroke-width="2" d="M129,-155.5C209.3,-155.5 210.7,-75.5 291,-75.5"/>
-<path fill="none" stroke="#000000" stroke-width="2" d="M129,-157.5C211.3,-155.53 212.7,-75.53 291,-77.5"/>
+<path fill="none" stroke="#895956" stroke-width="2" d="M129,-153.5C207.3,-155.47 208.7,-75.47 291,-73.5"/>
+<path fill="none" stroke="#895956" stroke-width="2" d="M129,-155.5C209.3,-155.5 210.7,-75.5 291,-75.5"/>
+<path fill="none" stroke="#895956" stroke-width="2" d="M129,-157.5C211.3,-155.53 212.7,-75.53 291,-77.5"/>
 <path fill="none" stroke="#000000" stroke-width="2" d="M129,-159.5C213.3,-155.57 214.7,-75.57 291,-79.5"/>
 </g>
 <!-- X1&#45;&#45;BrakeLight -->
 <g id="edge15" class="edge">
 <title>X1:e&#45;&#45;BrakeLight:w</title>
 <path fill="none" stroke="#000000" stroke-width="2" d="M129,-128.5C206.52,-132.55 205.48,-46.55 291,-42.5"/>
-<path fill="none" stroke="#895956" stroke-width="2" d="M129,-130.5C208.52,-132.52 207.48,-46.52 291,-44.5"/>
-<path fill="none" stroke="#895956" stroke-width="2" d="M129,-132.5C210.52,-132.5 209.48,-46.5 291,-46.5"/>
-<path fill="none" stroke="#895956" stroke-width="2" d="M129,-134.5C212.52,-132.48 211.48,-46.48 291,-48.5"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M129,-130.5C208.52,-132.52 207.48,-46.52 291,-44.5"/>
+<path fill="none" stroke="#000000" stroke-width="2" d="M129,-132.5C210.52,-132.5 209.48,-46.5 291,-46.5"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M129,-134.5C212.52,-132.48 211.48,-46.48 291,-48.5"/>
 <path fill="none" stroke="#000000" stroke-width="2" d="M129,-136.5C214.52,-132.45 213.48,-46.45 291,-50.5"/>
 </g>
 <!-- X2 -->
 <g id="node2" class="node">
 <title>X2</title>
-<polygon fill="#ffffff" stroke="black" points="662,-182.5 623,-182.5 623,-44.5 662,-44.5 662,-182.5"/>
-<polygon fill="none" stroke="black" points="623.5,-159.5 623.5,-182.5 662.5,-182.5 662.5,-159.5 623.5,-159.5"/>
-<text text-anchor="start" x="634.5" y="-167.3" font-family="arial" font-size="14.00">X2</text>
-<polygon fill="none" stroke="black" points="623.5,-136.5 623.5,-159.5 662.5,-159.5 662.5,-136.5 623.5,-136.5"/>
-<text text-anchor="start" x="627.5" y="-144.3" font-family="arial" font-size="14.00">4&#45;pin</text>
-<polygon fill="none" stroke="black" points="623.5,-113.5 623.5,-136.5 662.5,-136.5 662.5,-113.5 623.5,-113.5"/>
-<text text-anchor="start" x="639" y="-121.3" font-family="arial" font-size="14.00">1</text>
-<polygon fill="none" stroke="black" points="623.5,-90.5 623.5,-113.5 662.5,-113.5 662.5,-90.5 623.5,-90.5"/>
-<text text-anchor="start" x="639" y="-98.3" font-family="arial" font-size="14.00">2</text>
-<polygon fill="none" stroke="black" points="623.5,-67.5 623.5,-90.5 662.5,-90.5 662.5,-67.5 623.5,-67.5"/>
-<text text-anchor="start" x="639" y="-75.3" font-family="arial" font-size="14.00">3</text>
-<polygon fill="none" stroke="black" points="623.5,-44.5 623.5,-67.5 662.5,-67.5 662.5,-44.5 623.5,-44.5"/>
-<text text-anchor="start" x="639" y="-52.3" font-family="arial" font-size="14.00">4</text>
+<polygon fill="#ffffff" stroke="black" points="662,-168.5 623,-168.5 623,-30.5 662,-30.5 662,-168.5"/>
+<polygon fill="none" stroke="black" points="623.5,-145.5 623.5,-168.5 662.5,-168.5 662.5,-145.5 623.5,-145.5"/>
+<text text-anchor="start" x="634.5" y="-153.3" font-family="arial" font-size="14.00">X2</text>
+<polygon fill="none" stroke="black" points="623.5,-122.5 623.5,-145.5 662.5,-145.5 662.5,-122.5 623.5,-122.5"/>
+<text text-anchor="start" x="627.5" y="-130.3" font-family="arial" font-size="14.00">4&#45;pin</text>
+<polygon fill="none" stroke="black" points="623.5,-99.5 623.5,-122.5 662.5,-122.5 662.5,-99.5 623.5,-99.5"/>
+<text text-anchor="start" x="639" y="-107.3" font-family="arial" font-size="14.00">1</text>
+<polygon fill="none" stroke="black" points="623.5,-76.5 623.5,-99.5 662.5,-99.5 662.5,-76.5 623.5,-76.5"/>
+<text text-anchor="start" x="639" y="-84.3" font-family="arial" font-size="14.00">2</text>
+<polygon fill="none" stroke="black" points="623.5,-53.5 623.5,-76.5 662.5,-76.5 662.5,-53.5 623.5,-53.5"/>
+<text text-anchor="start" x="639" y="-61.3" font-family="arial" font-size="14.00">3</text>
+<polygon fill="none" stroke="black" points="623.5,-30.5 623.5,-53.5 662.5,-53.5 662.5,-30.5 623.5,-30.5"/>
+<text text-anchor="start" x="639" y="-38.3" font-family="arial" font-size="14.00">4</text>
 </g>
 <!-- X3 -->
 <g id="node3" class="node">
@@ -304,38 +304,38 @@
 <!-- BrakeLight&#45;&#45;X2 -->
 <g id="edge10" class="edge">
 <title>BrakeLight:e&#45;&#45;X2:w</title>
-<path fill="none" stroke="#000000" stroke-width="2" d="M461,-129.5C536.91,-133.39 539.09,-55.39 623,-51.5"/>
-<path fill="none" stroke="#ffffff" stroke-width="2" d="M461,-131.5C538.91,-133.44 541.09,-55.44 623,-53.5"/>
-<path fill="none" stroke="#ff0000" stroke-width="2" d="M461,-133.5C540.91,-133.5 543.09,-55.5 623,-55.5"/>
-<path fill="none" stroke="#ffffff" stroke-width="2" d="M461,-135.5C542.91,-133.56 545.09,-55.56 623,-57.5"/>
-<path fill="none" stroke="#000000" stroke-width="2" d="M461,-137.5C544.91,-133.61 547.09,-55.61 623,-59.5"/>
+<path fill="none" stroke="#000000" stroke-width="2" d="M461,-129.5C539.8,-133.66 536.2,-41.66 623,-37.5"/>
+<path fill="none" stroke="#ff0000" stroke-width="2" d="M461,-131.5C541.8,-133.58 538.2,-41.58 623,-39.5"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M461,-133.5C543.8,-133.5 540.2,-41.5 623,-41.5"/>
+<path fill="none" stroke="#ff0000" stroke-width="2" d="M461,-135.5C545.8,-133.42 542.2,-41.42 623,-43.5"/>
+<path fill="none" stroke="#000000" stroke-width="2" d="M461,-137.5C547.8,-133.34 544.2,-41.34 623,-45.5"/>
 </g>
 <!-- BrakeLight&#45;&#45;X2 -->
 <g id="edge12" class="edge">
 <title>BrakeLight:e&#45;&#45;X2:w</title>
-<path fill="none" stroke="#000000" stroke-width="2" d="M461,-100.5C530.52,-102.39 546.68,-76.39 623,-74.5"/>
-<path fill="none" stroke="#ffffff" stroke-width="2" d="M461,-102.5C532.22,-103.44 548.38,-77.44 623,-76.5"/>
-<path fill="none" stroke="#000000" stroke-width="2" d="M461,-104.5C533.92,-104.5 550.08,-78.5 623,-78.5"/>
-<path fill="none" stroke="#ffffff" stroke-width="2" d="M461,-106.5C535.62,-105.56 551.78,-79.56 623,-80.5"/>
-<path fill="none" stroke="#000000" stroke-width="2" d="M461,-108.5C537.32,-106.61 553.48,-80.61 623,-82.5"/>
+<path fill="none" stroke="#000000" stroke-width="2" d="M461,-100.5C530.58,-101.65 547.79,-84.65 623,-83.5"/>
+<path fill="none" stroke="#000000" stroke-width="2" d="M461,-102.5C531.99,-103.08 549.2,-86.08 623,-85.5"/>
+<path fill="none" stroke="#000000" stroke-width="2" d="M461,-104.5C533.4,-104.5 550.6,-87.5 623,-87.5"/>
+<path fill="none" stroke="#000000" stroke-width="2" d="M461,-106.5C534.8,-105.92 552.01,-88.92 623,-89.5"/>
+<path fill="none" stroke="#000000" stroke-width="2" d="M461,-108.5C536.21,-107.35 553.42,-90.35 623,-91.5"/>
 </g>
 <!-- BrakeLight&#45;&#45;X2 -->
 <g id="edge14" class="edge">
 <title>BrakeLight:e&#45;&#45;X2:w</title>
-<path fill="none" stroke="#000000" stroke-width="2" d="M461,-71.5C537.32,-73.39 553.48,-99.39 623,-97.5"/>
-<path fill="none" stroke="#000000" stroke-width="2" d="M461,-73.5C535.62,-74.44 551.78,-100.44 623,-99.5"/>
-<path fill="none" stroke="#000000" stroke-width="2" d="M461,-75.5C533.92,-75.5 550.08,-101.5 623,-101.5"/>
-<path fill="none" stroke="#000000" stroke-width="2" d="M461,-77.5C532.22,-76.56 548.38,-102.56 623,-103.5"/>
-<path fill="none" stroke="#000000" stroke-width="2" d="M461,-79.5C530.52,-77.61 546.68,-103.61 623,-105.5"/>
+<path fill="none" stroke="#000000" stroke-width="2" d="M461,-71.5C538.47,-74.01 552.95,-110.01 623,-107.5"/>
+<path fill="none" stroke="#895956" stroke-width="2" d="M461,-73.5C536.61,-74.75 551.1,-110.75 623,-109.5"/>
+<path fill="none" stroke="#895956" stroke-width="2" d="M461,-75.5C534.76,-75.5 549.24,-111.5 623,-111.5"/>
+<path fill="none" stroke="#895956" stroke-width="2" d="M461,-77.5C532.9,-76.25 547.39,-112.25 623,-113.5"/>
+<path fill="none" stroke="#000000" stroke-width="2" d="M461,-79.5C531.05,-76.99 545.53,-112.99 623,-115.5"/>
 </g>
 <!-- BrakeLight&#45;&#45;X2 -->
 <g id="edge16" class="edge">
 <title>BrakeLight:e&#45;&#45;X2:w</title>
-<path fill="none" stroke="#000000" stroke-width="2" d="M461,-42.5C545.1,-46.41 546.89,-125.41 623,-121.5"/>
-<path fill="none" stroke="#895956" stroke-width="2" d="M461,-44.5C543.1,-46.45 544.89,-125.45 623,-123.5"/>
-<path fill="none" stroke="#895956" stroke-width="2" d="M461,-46.5C541.1,-46.5 542.9,-125.5 623,-125.5"/>
-<path fill="none" stroke="#895956" stroke-width="2" d="M461,-48.5C539.11,-46.55 540.9,-125.55 623,-127.5"/>
-<path fill="none" stroke="#000000" stroke-width="2" d="M461,-50.5C537.11,-46.59 538.9,-125.59 623,-129.5"/>
+<path fill="none" stroke="#000000" stroke-width="2" d="M461,-42.5C536.34,-43.74 553.46,-61.74 623,-60.5"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M461,-44.5C534.89,-45.12 552.01,-63.12 623,-62.5"/>
+<path fill="none" stroke="#000000" stroke-width="2" d="M461,-46.5C533.44,-46.5 550.56,-64.5 623,-64.5"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M461,-48.5C531.99,-47.88 549.11,-65.88 623,-66.5"/>
+<path fill="none" stroke="#000000" stroke-width="2" d="M461,-50.5C530.54,-49.26 547.66,-67.26 623,-68.5"/>
 </g>
 </g>
 </svg>

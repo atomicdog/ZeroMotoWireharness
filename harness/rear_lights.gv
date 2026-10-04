@@ -240,18 +240,18 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	edge [color="#000000:#ffffff:#ff0000:#ffffff:#000000"]
+	edge [color="#000000:#ff0000:#ffffff:#ff0000:#000000"]
 	X1:p5r:e -- BrakeLight:w1:w
 	BrakeLight:w1:e -- X2:p4l:w
-	edge [color="#000000:#ffffff:#000000:#ffffff:#000000"]
-	X1:p6r:e -- BrakeLight:w2:w
-	BrakeLight:w2:e -- X2:p3l:w
 	edge [color="#000000:#000000:#000000:#000000:#000000"]
-	X1:p7r:e -- BrakeLight:w3:w
-	BrakeLight:w3:e -- X2:p2l:w
+	X1:p6r:e -- BrakeLight:w2:w
+	BrakeLight:w2:e -- X2:p2l:w
 	edge [color="#000000:#895956:#895956:#895956:#000000"]
+	X1:p7r:e -- BrakeLight:w3:w
+	BrakeLight:w3:e -- X2:p1l:w
+	edge [color="#000000:#ffffff:#000000:#ffffff:#000000"]
 	X1:p8r:e -- BrakeLight:w4:w
-	BrakeLight:w4:e -- X2:p1l:w
+	BrakeLight:w4:e -- X2:p3l:w
 	BrakeLight [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -271,7 +271,7 @@ graph {
    <tr>
     <td>X1:5:5</td>
     <td>
-     1:WHRD
+     1:RDWH
     </td>
     <td>X2:4</td>
    </tr>
@@ -279,9 +279,9 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="10">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -289,17 +289,17 @@ graph {
    <tr>
     <td>X1:6:6</td>
     <td>
-     2:WHBK
+     2:BK
     </td>
-    <td>X2:3</td>
+    <td>X2:2</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="10">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -307,17 +307,17 @@ graph {
    <tr>
     <td>X1:7:7</td>
     <td>
-     3:BK
+     3:BN
     </td>
-    <td>X2:2</td>
+    <td>X2:1</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="10">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -325,17 +325,17 @@ graph {
    <tr>
     <td>X1:8:8</td>
     <td>
-     4:BN
+     4:WHBK
     </td>
-    <td>X2:1</td>
+    <td>X2:3</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="10">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#895956" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>

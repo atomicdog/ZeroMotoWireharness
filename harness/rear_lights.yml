@@ -30,7 +30,7 @@ cables:
   BrakeLight:
     wirecount: 4
     length: 14 in
-    colors: [WHRD, WHBK, BK, BN] 
+    colors: [RDWH, BK, BN, WHBK]
     notes: Harn S MBB ctrl CHS
 connections:
   -
@@ -51,7 +51,7 @@ connections:
   -
     - X1: [5-8]
     - BrakeLight: [1-4]
-    - X2: [4-1]
+    - X2: [4,2,1,3]
 
 additional_bom_items:
   - # define an additional item to add to the bill of materials (does not appear in graph)

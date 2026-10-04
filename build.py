@@ -48,16 +48,21 @@ def bom_to_markdown(tsv_file: Path) -> str:
     return '\n'.join(lines)
 
 
+def display_name(name: str) -> str:
+    return name.replace('_', ' ')
+
+
 def generate_page(name: str, out_dir: Path):
+    title = display_name(name)
     bom_file = out_dir / f'{name}.bom.tsv'
     bom = bom_to_markdown(bom_file) if bom_file.exists() else '_No BOM generated._'
 
     md = f"""\
-# {name}
+# {title}
 
 [Interactive HTML]({name}.html) &middot; [SVG]({name}.svg) &middot; [PNG]({name}.png) &middot; [BOM (TSV)]({name}.bom.tsv) &middot; [Source](https://github.com/atomicdog/ZeroMotoWireharness/blob/master/harness/{name}.yml)
 
-[![{name} wiring diagram]({name}.svg)]({name}.svg)
+[![{title} wiring diagram]({name}.svg)]({name}.svg)
 
 ## Bill of materials
 
@@ -67,7 +72,7 @@ def generate_page(name: str, out_dir: Path):
 
 
 def generate_index(yml_files, out_dir: Path):
-    rows = '\n'.join(f'- [{f.stem}]({f.stem}.md)' for f in yml_files)
+    rows = '\n'.join(f'- [{display_name(f.stem)}]({f.stem}.md)' for f in yml_files)
     md = f"""\
 # Harnesses
 

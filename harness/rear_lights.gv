@@ -41,19 +41,19 @@ graph {
     <td port="p4r">4</td>
    </tr>
    <tr>
-    <td>5</td>
+    <td>12V BrakeLight</td>
     <td port="p5r">5</td>
    </tr>
    <tr>
-    <td>6</td>
+    <td>GND</td>
     <td port="p6r">6</td>
    </tr>
    <tr>
-    <td>7</td>
+    <td>12V RunningLight</td>
     <td port="p7r">7</td>
    </tr>
    <tr>
-    <td>8</td>
+    <td>BRAKE</td>
     <td port="p8r">8</td>
    </tr>
   </table>
@@ -269,7 +269,7 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>X1:5:5</td>
+    <td>X1:5:12V BrakeLight</td>
     <td>
      1:RDWH
     </td>
@@ -287,7 +287,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>X1:6:6</td>
+    <td>X1:6:GND</td>
     <td>
      2:BK
     </td>
@@ -305,7 +305,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>X1:7:7</td>
+    <td>X1:7:12V RunningLight</td>
     <td>
      3:BN
     </td>
@@ -323,7 +323,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>X1:8:8</td>
+    <td>X1:8:BRAKE</td>
     <td>
      4:WHBK
     </td>
